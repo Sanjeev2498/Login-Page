@@ -1,0 +1,14 @@
+routes name should be unique and easy to readable , and the route must be returning something 
+
+""
+Flask : recepsionist check what is person doing 
+GET: person only looking around  || To get data from server ||Donot send any info to server ||Donot send Password or sensitive data using get bcz it send the data to url
+POST : user giving something  || Send data to server || It do send/act something 
+"" 
+""
+request.Method -it holds all the user sended  request details  
+request - Read what the user sends
+response - send something back to the user
+redirect- move the user to a different page 
+url_for - System will build  a route dynamically from function name  ex- /home 
+session - remember user info across pages
