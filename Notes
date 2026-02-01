@@ -12,3 +12,9 @@ response - send something back to the user
 redirect- move the user to a different page 
 url_for - System will build  a route dynamically from function name  ex- /home 
 session - remember user info across pages
+""
+""
+Using forms -
+1- Use the attribute name
+2- always define the method ,like POST
+3- make sure the name of the route name should match in HTML action 
