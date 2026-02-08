@@ -1,20 +1,61 @@
-routes name should be unique and easy to readable , and the route must be returning something 
+routes name should be unique and easy to readable , and the route must be returning something
 
 ""
-Flask : recepsionist check what is person doing 
-GET: person only looking around  || To get data from server ||Donot send any info to server ||Donot send Password or sensitive data using get bcz it send the data to url
-POST : user giving something  || Send data to server || It do send/act something 
-"" 
+Flask : recepsionist check what is person doing
+GET: person only looking around || To get data from server ||Donot send any info to server ||Donot send Password or sensitive data using get bcz it send the data to url
+POST : user giving something || Send data to server || It do send/act something
 ""
-request.Method -it holds all the user sended  request details  
+""
+request.Method -it holds all the user sended request details  
 request - Read what the user sends
 response - send something back to the user
-redirect- move the user to a different page 
-url_for - System will build  a route dynamically from function name  ex- /home 
+redirect- move the user to a different page
+url_for - System will build a route dynamically from function name ex- /home
 session - remember user info across pages
 ""
 ""
 Using forms -
 1- Use the attribute name
 2- always define the method ,like POST
-3- make sure the name of the route name should match in HTML action 
+3- make sure the name of the route name should match in HTML action
+""
+""
+JINJA 2
+It is used to make dynamic html pages ,
+It is a template engine in flask used to show python values inside html , and
+It is only work in html
+
+Examples -
+1- python values
+{{variable }}
+{{name}}
+
+<p>Welcome {{name}}</p>
+2- conditionals
+is_topper =True
+
+{% if is_topper%}
+
+<p>You are a topper </p>
+{% else %}
+<p>You need to work hard </p>
+{% endif %}
+""
+""q
+Template inheritance -
+It define a base layout in html and we can use it to all html pages , which helps to reduce code duplicating 
+Layout set - 
+Defining a common page structure that all pages will follow.
+Dynamic Content -
+content that changes based on data, user, or logic
+
+""
+""
+Always remember to end the tag % end % ,otherwise server error
+%extends% - tells Jinja2:
+This page is a child template and should use another template as its layout.
+%block% -a placeholder area in a parent (layout) template
+that child templates can replace or fill.
+
+""
+""
