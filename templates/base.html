@@ -1,40 +1,41 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>{% block title %} My website {% endblock %}</title>
+    <title>{% block title %}My Feedback Site{%endblock title%}</title>
+
     <style>
       body {
         font-family: Arial, Helvetica, sans-serif;
         padding: 20px;
+        background-color: lightblue;
       }
-      header {
-        background: #333;
-        color: white;
-        padding: 10px;
-      }
+      header,
       footer {
-        background: yellow;
+        background: #333;
         padding: 10px;
-        margin-top: 20px;
+        color: white;
+      }
+      nav a {
+        margin: 0 10px;
+        color: white;
+        text-decoration: none;
+      }
+      main {
+        background: white;
+        padding: 20px;
       }
     </style>
   </head>
   <body>
     <header>
-      <h2>
-        My Site
-        <nav>
-          <a href="/">Home</a>
-          <a href="/about">About</a>
-        </nav>
-      </h2>
+      <h1>Feedback Page</h1>
+      <nav>
+        <a href="/feedback.html">Feedback</a>
+      </nav>
     </header>
-    {% block content %} {% endblock %}
-
+    <main>{% block content %} {% endblock %}</main>
     <footer>
-      <p>
-        @2025 Coding academy india's best IT training and placement institute
-      </p>
+      <p>&copy;;2026 CODINGWITH ME</p>
     </footer>
   </body>
 </html>
